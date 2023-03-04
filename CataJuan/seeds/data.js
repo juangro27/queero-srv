@@ -1,4 +1,4 @@
-[
+const countries = [
     {
         alpha3Code: 'AFG',
         name: "afghanistan",
@@ -910,7 +910,7 @@
         score: "d-"
     },
     {
-        alpha3Code: 'GUN',
+        alpha3Code: 'GUM',
         name: "guam",
         discriminationProtection: 3,
         violenceCriminalization: 1,
@@ -2639,3 +2639,5 @@
         score: "f"
     }
 ]
+
+module.exports = countries
