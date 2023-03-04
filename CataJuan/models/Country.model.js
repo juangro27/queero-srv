@@ -66,7 +66,68 @@ const countrySchema = new Schema(
         },
         score: {
             type: String,
-            required: [true, 'score is required.'],
+            required: [true, 'Score is required.'],
+            trim: true
+        },
+        currencies: [
+            {
+                name: {
+                    type: String,
+                    required: [true, 'Currency name required.']
+                },
+                code: {
+                    type: String,
+                    required: [true, 'Currency code required.']
+                }
+            }
+        ],
+        capital: {
+            type: String,
+            // required: [true, 'Capital is required.'],
+            trim: true
+        },
+        region: {
+            type: String,
+            required: [true, 'Region is required.'],
+            trim: true
+        },
+        subregion: {
+            type: String,
+            required: [true, 'Subregion is required.'],
+            trim: true
+        },
+        languages: {
+            type: [String],
+            required: [true, 'Languages required.']
+        },
+        location: {
+            type: {
+                type: String
+            },
+            coordinates: {
+                type: [Number],
+                required: [true, 'Location is required.'],
+                trim: true
+            }
+        }
+        ,
+        area: {
+            type: Number,
+            required: [true, 'Area is required.'],
+            trim: true
+        },
+        flag: {
+            type: String,
+            required: [true, 'Flag is required.'],
+            trim: true
+        },
+        maps: {
+            googleMaps: { type: String },
+            openStreetMaps: { type: String }
+        },
+        population: {
+            type: Number,
+            required: [true, 'Population is required.'],
             trim: true
         },
         comments: [{
