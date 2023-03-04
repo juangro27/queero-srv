@@ -1,7 +1,6 @@
 const router = require("express").Router()
 const Comment = require("../models/Comment.model")
 const Country = require('../models/Country.model')
-const User = require('../models/User.model')
 
 
 router.get('/', (req, res, next) => {
@@ -49,7 +48,6 @@ router.post('/:id/edit', (req, res, next) => {
         propaganda,
         safetyIndex,
         score,
-        comments
     } = req.body
     const country = {
         name,
@@ -103,7 +101,6 @@ router.post('/:id/comments/edit', (req, res, next) => {
     const { id } = req.params
     const { commentId, comment } = req.body
 
-
     Comment
         .findByIdAndUpdate(commentId, { comment })
         .then(() => Country
@@ -129,16 +126,22 @@ router.get('/:id/comments/delete', (req, res, next) => {
 
     Comment
         .findByIdAndDelete(commentId)
-        .then(() => Country
-            .findById(id)
-            .populate({
-                path: "comments",
-                select: '-updatedAt',
-                populate: {
-                    path: 'owner',
-                    select: '-__v -password -email -role -createdAt -updatedAt'
-                }
-            }))
+        .then(() => {
+            return Country
+                .findByIdAndUpdate(id, { $pull: { comments: commentId } })
+                .populate({
+                    path: "comments",
+                    select: '-updatedAt',
+                    populate: {
+                        path: 'owner',
+                        select: '-__v -password -email -role -createdAt -updatedAt'
+                    }
+                })
+                .populate({
+                    path: 'posts',
+                    select: 'title'
+                })
+        })
         .then(country => res.json(country))
         .catch(err => next(err))
 

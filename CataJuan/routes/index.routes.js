@@ -3,6 +3,9 @@ const router = require("express").Router();
 const countriesRoutes = require("./countries.routes")
 router.use("/countries", countriesRoutes)
 
+const postsRoutes = require("./posts.routes")
+router.use("/posts", postsRoutes)
+
 const authRoutes = require("./auth.routes")
 router.use("/auth", authRoutes)
 

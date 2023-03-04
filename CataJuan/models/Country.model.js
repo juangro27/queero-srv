@@ -73,6 +73,10 @@ const countrySchema = new Schema(
             ref: 'comment',
             type: Schema.Types.ObjectId
         }],
+        posts: [{
+            ref: 'post',
+            type: Schema.Types.ObjectId
+        }],
     },
     {
         timestamps: true
