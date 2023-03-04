@@ -8,6 +8,16 @@ const countrySchema = new Schema(
             lowercase: true,
             trim: true
         },
+        description: {
+            type: String,
+            trim: true,
+            default: ''
+        },
+        img: {
+            type: String,
+            trim: true,
+            default: ''
+        },
         alpha3Code: {
             type: String,
             required: [true, 'Alpha3Code is required.'],
