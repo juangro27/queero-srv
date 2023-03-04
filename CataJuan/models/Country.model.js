@@ -8,6 +8,16 @@ const countrySchema = new Schema(
             lowercase: true,
             trim: true
         },
+        description: {
+            type: String,
+            trim: true,
+            default: ''
+        },
+        img: {
+            type: String,
+            trim: true,
+            default: ''
+        },
         alpha3Code: {
             type: String,
             required: [true, 'Alpha3Code is required.'],
@@ -69,6 +79,6 @@ const countrySchema = new Schema(
     }
 );
 
-const Country = model("Country", countrySchema);
+const Country = model("country", countrySchema);
 
 module.exports = Country;
