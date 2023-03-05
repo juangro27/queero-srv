@@ -47,19 +47,3 @@ Base URL /auth
 | POST    | /login                                   | Login user                |
 | POST    | /signup                                  | Signup user               |
 | GET     | /verify                                  | Verify auth token         |
-
-Auth routes
-
-Base URL /auth
-
-
-| METHOD  | URI Path                                 | Description                            |
-|---------|------------------------------------------|----------------------------------------|
-| GET     | /posts                                   | All countries list                     |
-| POST    | /posts/create                            | Create a new country                   |
-| GET     | /posts/:id                               | Matching ID country details            |
-| PUT     | /posts/:id/edit                          | Edit a specific country                |
-| DELETE  | /posts/:id/delete                        | Delete a specific country              |
-| POST    | /posts/:id/comments/create               | Create new comment in specific country |
-| PUT     | /posts/:id/comments/:comment/edit        | Edit comment in specific country       |
-| DELETE  | /posts/:id/comments/:comment/delete      | Delete comment in specific country     |
