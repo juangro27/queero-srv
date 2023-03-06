@@ -33,7 +33,7 @@ router.post('/signup', uploaderMiddleware.single('avatar'), (req, res, next) => 
             const salt = bcrypt.genSaltSync(saltRounds)
             const hashedPassword = bcrypt.hashSync(password, salt)
 
-            return User.create({ email, password: hashedPassword, name, lastName })
+            return User.create({ email, password: hashedPassword, name, avatar, lastName })
         })
         .then(() => res.sendStatus(201))
         .catch(err => next(err))

@@ -1,42 +1,15 @@
 const countries = require('./data')
 const ApiCountriesService = require("../services/ApiCountriesService")
 const Country = require('../models/Country.model')
+const { parseCountries } = require('../utils/parsedCountries')
+const mongoose = require('mongoose')
 
 require('../db')
 
 ApiCountriesService
     .getAllCountries()
-    .then(({ data }) => {
-
-
-        const parsedCountries = countries.map(elm => {
-
-            const coincidentCountry = data.find(country => country.cca3 === elm.alpha3Code)
-            const { currencies, capital, region, subregion, languages, latlng, area, flag, maps, population } = coincidentCountry
-            const currenciesParsed = []
-            const languagesParsed = []
-            const location = { type: 'Point', coordinates: latlng }
-            let capitalParsed
-
-            for (const key in currencies) {
-
-                const { name } = coincidentCountry.currencies[key]
-                currenciesParsed.push({ name, code: key })
-
-            }
-
-            for (const key in languages) {
-
-                languagesParsed.push(coincidentCountry.languages[key])
-
-            }
-
-            capital ? capitalParsed = capital[0] : capitalParsed = 'NO INFO'
-            return { ...elm, currencies: currenciesParsed, capital: capitalParsed, region, subregion, languages: languagesParsed, location, area, flag, maps, population }
-        })
-
-        return parsedCountries
-
-    })
+    .then(({ data }) => parseCountries(countries, data))
     .then(data => Country.insertMany(data))
+    .then(() => console.log('The countries are in the data base.'))
+    .then(() => mongoose.connection.close())
     .catch(err => console.log(err))
