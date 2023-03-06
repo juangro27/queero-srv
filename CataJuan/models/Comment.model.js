@@ -11,6 +11,10 @@ const commentSchema = new Schema(
       ref: 'user',
       type: Schema.Types.ObjectId
     },
+    commentOver: {
+      type: String,
+      enum: ['POST', 'COUNTRY']
+    }
   },
   {
     timestamps: true

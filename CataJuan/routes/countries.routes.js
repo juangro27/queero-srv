@@ -89,7 +89,7 @@ router.post('/:id/comments/create', (req, res, next) => {
     const { owner, comment } = req.body
 
     Comment
-        .create({ owner, comment })
+        .create({ owner, comment, commentOver: 'COUNTRY' })
         .then(({ _id: commentId }) => Country.findByIdAndUpdate(id, { $push: { comments: commentId } }, { new: true }))
         .then(country => res.json(country))
         .catch(err => next(err))

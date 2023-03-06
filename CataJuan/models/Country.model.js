@@ -83,7 +83,7 @@ const countrySchema = new Schema(
         ],
         capital: {
             type: String,
-            // required: [true, 'Capital is required.'],
+            required: [true, 'Capital is required.'],
             trim: true
         },
         region: {

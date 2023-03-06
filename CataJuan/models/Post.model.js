@@ -18,16 +18,16 @@ const postSchema = new Schema(
       type: Schema.Types.ObjectId,
       required: true,
     },
-    country: {
-      ref: 'country',
-      type: Schema.Types.ObjectId,
-      required: true,
-    },
     description: {
       type: String,
       required: [true, 'Description is required.'],
       lowercase: true,
       trim: true
+    },
+    country: {
+      ref: 'country',
+      type: Schema.Types.ObjectId,
+      required: true,
     },
     comments: [{
       ref: 'comment',
