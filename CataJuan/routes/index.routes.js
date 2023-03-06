@@ -12,4 +12,7 @@ router.use("/auth", authRoutes)
 const userRoutes = require("./user.routes")
 router.use("/users", userRoutes)
 
+const commentsRoutes = require("./comments.routes")
+router.use("/comments", commentsRoutes)
+
 module.exports = router;

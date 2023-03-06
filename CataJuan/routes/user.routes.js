@@ -25,17 +25,6 @@ router.get("/:id", (req, res, next) => {
         .catch(err => next(err))
 })
 
-// router.put("/:id/edit", (req, res, next) => {
-
-//     const { id } = req.params
-//     const { name, lastName, avatar } = req.body
-
-//     User
-//         .findByIdAndUpdate(id, { name, lastName, avatar }, { new: true })
-//         .then(user => res.json(user))
-//         .catch(err => next(err))
-// })
-
 router.put("/:id/edit", (req, res, next) => {
     const { id } = req.params
     const { name, lastName, avatar } = req.body
