@@ -31,7 +31,7 @@ router.get('/:id', (req, res, next) => {
 
 })
 
-router.post('/:id/edit', (req, res, next) => {
+router.put('/:id/edit', (req, res, next) => {
 
     const { id } = req.params
     const {
@@ -72,7 +72,7 @@ router.post('/:id/edit', (req, res, next) => {
 
 })
 
-router.get('/:id/delete', (req, res, next) => {
+router.delete('/:id/delete', (req, res, next) => {
 
     const { id } = req.params
 
@@ -96,7 +96,7 @@ router.post('/:id/comments/create', (req, res, next) => {
 
 })
 
-router.post('/:id/comments/edit', (req, res, next) => {
+router.put('/:id/comments/edit', (req, res, next) => {
 
     const { id } = req.params
     const { commentId, comment } = req.body
@@ -118,7 +118,7 @@ router.post('/:id/comments/edit', (req, res, next) => {
 
 })
 
-router.get('/:id/comments/delete', (req, res, next) => {
+router.delete('/:id/comments/delete', (req, res, next) => {
 
     const { id } = req.params
     const { commentId } = req.body

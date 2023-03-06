@@ -49,7 +49,7 @@ router.post('/create', (req, res, next) => {
 
 })
 
-router.post('/:id/edit', (req, res, next) => {
+router.put('/:id/edit', (req, res, next) => {
 
     const { id } = req.params
 
@@ -68,7 +68,7 @@ router.post('/:id/edit', (req, res, next) => {
 
 })
 
-router.post('/:id/delete', (req, res, next) => {
+router.delete('/:id/delete', (req, res, next) => {
 
     const { id } = req.params
     const { countryId } = req.body

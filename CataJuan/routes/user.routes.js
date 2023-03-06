@@ -14,7 +14,7 @@ router.get("/", (req, res, next) => {
         .catch(err => next(err))
 })
 
-router.post("/:id/edit", (req, res, next) => {
+router.put("/:id/edit", (req, res, next) => {
 
     const { id } = req.params
     const { name, lastName, avatar } = req.body
@@ -25,7 +25,7 @@ router.post("/:id/edit", (req, res, next) => {
         .catch(err => next(err))
 })
 
-router.post("/:id/delete", (req, res, next) => {
+router.delete("/:id/delete", (req, res, next) => {
 
     const { id } = req.params
 
@@ -49,6 +49,3 @@ router.get("/:id", (req, res, next) => {
 
 
 module.exports = router
-
-
-    // : id / delete
