@@ -9,8 +9,8 @@ Base URL /countries
 | PUT     | /countries/:id/edit                      | Matching ID country edit                         |
 | DELETE  | /countries/:id/delete                    | Matching ID country deletion                     |
 | POST    | /countries/:id/comments/create           | Create new comment in specific country           |
-| PUT     | /countries/:id/comments/:comment/edit    | Matching ID comment deletion in specific country |
-| DELETE  | /countries/:id/comments/:comment/delete  | Matching ID comment deletion in specific country |
+| PUT     | /countries/:id/comments/edit    | Matching ID comment deletion in specific country |
+| DELETE  | /countries/:id/comments/delete  | Matching ID comment deletion in specific country |
 
 Posts routes
 
@@ -24,8 +24,8 @@ Base URL /posts
 | PUT     | /posts/:id/edit                          | Matching ID post edit                         |
 | DELETE  | /posts/:id/delete                        | Matching ID post deletion                     |
 | POST    | /posts/:id/comments/create               | Create new comment in specific post           |
-| PUT     | /posts/:id/comments/:comment/edit        | Matching ID comment deletion in specific post |
-| DELETE  | /posts/:id/comments/:comment/delete      | Matching ID comment deletion in specific post |
+| PUT     | /posts/:id/comments/edit                 | Matching ID comment deletion in specific post |
+| DELETE  | /posts/:id/comments/delete               | Matching ID comment deletion in specific post |
 
 Users routes
 
