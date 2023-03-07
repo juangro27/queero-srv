@@ -1,6 +1,8 @@
 const Country = require("../models/Country.model")
 const Post = require("../models/Post.model")
-
+const jwt = require('jsonwebtoken')
+const bcrypt = require('bcryptjs')
+const { verifyToken } = require("../middlewares/verifyToken")
 const router = require("express").Router()
 
 router.get('/', (req, res, next) => {
@@ -12,7 +14,9 @@ router.get('/', (req, res, next) => {
 
 })
 
-router.post('/create', (req, res, next) => {
+router.post('/create', verifyToken, (req, res, next) => {
+
+    console.log(req.payload._id)
 
     const {
         title,
@@ -23,7 +27,7 @@ router.post('/create', (req, res, next) => {
     } = req.body
 
     const post = { title, postImg, owner, country, description }
-
+    console.log(post)
     Post
         .create(post)
         .then(({ _id: postId }) => {

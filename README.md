@@ -5,6 +5,7 @@ Base URL /countries
 | METHOD  | URI Path                                 | Description                                      |
 |---------|------------------------------------------|--------------------------------------------------|
 | GET     | /countries                               | All countries list                               |
+| GET     | /countries/names                         | All country names list                           |
 | GET     | /countries/:id                           | Matching ID country details                      |
 | PUT     | /countries/:id/edit                      | Matching ID country edit                         |
 | DELETE  | /countries/:id/delete                    | Matching ID country deletion                     |
