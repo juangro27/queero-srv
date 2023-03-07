@@ -4,6 +4,29 @@ const Country = require('../models/Country.model')
 const Post = require('../models/Post.model')
 
 
+router.get('/:id', (req, res, next) => {
+
+    const { id } = req.params
+    const { type } = req.query
+    const getPageComments = model => {
+        return model.findById(id)
+            .select({ comments: 1 })
+            .populate({
+                path: "comments",
+                select: '-updatedAt',
+                populate: {
+                    path: 'owner',
+                    select: '-__v -password -email -role -createdAt -updatedAt'
+                }
+            })
+            .then(comments => res.json(comments))
+            .catch(err => next(err))
+    }
+    return type === 'COUNTRY' ? getPageComments(Country) : getPageComments(Post)
+
+
+})
+
 router.post('/create/:type/:id', (req, res, next) => {
 
     const { id, type } = req.params
@@ -12,69 +35,47 @@ router.post('/create/:type/:id', (req, res, next) => {
     Comment
         .create({ owner, comment, commentOver: type })
         .then(({ _id: commentId }) => {
-            return type === 'country' ?
-                Country.findByIdAndUpdate(id, { $push: { comments: commentId } }, { new: true })
-                : Post.findByIdAndUpdate(id, { $push: { comments: commentId } }, { new: true })
+            const promises = [
+                Comment.findById(commentId).populate({
+                    path: 'owner',
+                    select: '-__v -password -email -role -createdAt -updatedAt'
+                })
+            ]
+            type === 'COUNTRY' ?
+                promises.push(Country.findByIdAndUpdate(id, { $push: { comments: commentId } }, { new: true }))
+                : promises.push(Post.findByIdAndUpdate(id, { $push: { comments: commentId } }, { new: true }))
+            return Promise.all(promises)
         })
+        .then(([comment]) => res.json(comment))
+        .catch(err => next(err))
+
+})
+
+
+router.put('/edit/:id', (req, res, next) => {
+
+    const { id } = req.params
+    const { comment } = req.body
+
+    Comment
+        .findByIdAndUpdate(id, { comment }, { new: true })
         .then(response => res.json(response))
         .catch(err => next(err))
 
 })
 
 
-router.put('/:id/edit/:type', (req, res, next) => {
+router.delete('/delete/:type/:typeId/:id', (req, res, next) => {
 
-    const { id, type } = req.params
-    const { commentId, comment } = req.body
-
-    Comment
-        .findByIdAndUpdate(commentId, { comment })
-        .then(() => {
-
-            if (type === 'country') {
-                return Country
-                    .findById(id)
-                    .populate({
-                        path: "comments",
-                        select: '-updatedAt',
-                        populate: {
-                            path: 'owner',
-                            select: '-__v -password -email -role -createdAt -updatedAt'
-                        }
-                    })
-            }
-            else {
-                return Post
-                    .findById(id)
-                    .populate({
-                        path: "comments",
-                        select: '-updatedAt',
-                        populate: {
-                            path: 'owner',
-                            select: '-__v -password -email -role -createdAt -updatedAt'
-                        }
-                    })
-
-            }
-        })
-        .then(response => res.json(response))
-        .catch(err => next(err))
-
-})
-
-
-router.delete('/:id/delete/:type', (req, res, next) => {
-
-    const { id, type } = req.params
-    const { commentId } = req.body
+    const { id, type, typeId } = req.params
 
 
     Comment
-        .findByIdAndDelete(commentId)
+        .findByIdAndDelete(id)
         .then(() => {
-            if (type === 'country') {
+            if (type === 'COUNTRY') {
                 return Country
-                    .findByIdAndUpdate(id, { $pull: { comments: commentId } })
+                    .findByIdAndUpdate(typeId, { $pull: { comments: id } })
                     .populate({
                         path: "comments",
                         select: '-updatedAt',
@@ -90,7 +91,7 @@ router.delete('/:id/delete/:type', (req, res, next) => {
             }
             else {
                 return Post
-                    .findByIdAndUpdate(id, { $pull: { comments: commentId } })
+                    .findByIdAndUpdate(typeId, { $pull: { comments: id } })
                     .populate({
                         path: "comments",
                         select: '-updatedAt',
