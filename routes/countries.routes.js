@@ -33,8 +33,9 @@ router.get('/:id', (req, res, next) => {
             populate: {
                 path: 'owner',
                 select: '-__v -password -email -role -createdAt -updatedAt'
-            }
+            },
         })
+        .populate('posts', 'title')
         .then(country => res.json(country))
         .catch(err => next(err))
 

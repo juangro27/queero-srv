@@ -16,8 +16,6 @@ router.get('/', (req, res, next) => {
 
 router.post('/create', (req, res, next) => {
 
-
-
     const {
         title,
         postImg,
@@ -48,6 +46,14 @@ router.get('/:id', (req, res, next) => {
 
     Post
         .findById(id)
+        .populate({
+            path: "comments",
+            select: '-updatedAt',
+            populate: {
+                path: 'owner',
+                select: '-__v -password -email -role -createdAt -updatedAt'
+            }
+        })
         .then(post => res.json(post))
         .catch(err => next(err))
 
