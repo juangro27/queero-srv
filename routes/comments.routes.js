@@ -2,6 +2,7 @@ const router = require("express").Router()
 const Comment = require("../models/Comment.model")
 const Country = require('../models/Country.model')
 const Post = require('../models/Post.model')
+const { verifyToken } = require("../middlewares/verifyToken")
 
 
 router.get('/:type/:id', (req, res, next) => {
@@ -23,13 +24,13 @@ router.get('/:type/:id', (req, res, next) => {
     }
     return type === 'COUNTRY' ? getPageComments(Country) : getPageComments(Post)
 
-
 })
 
-router.post('/create/:type/:id', (req, res, next) => {
+router.post('/create/:type/:id', verifyToken, (req, res, next) => {
 
     const { id, type } = req.params
-    const { owner, comment } = req.body
+    const { _id: owner } = req.payload
+    const { comment } = req.body
 
     Comment
         .create({ owner, comment, commentOver: type })
@@ -51,7 +52,7 @@ router.post('/create/:type/:id', (req, res, next) => {
 })
 
 
-router.put('/edit/:id', (req, res, next) => {
+router.put('/edit/:id', verifyToken, (req, res, next) => {
 
     const { id } = req.params
     const { comment } = req.body
@@ -64,7 +65,7 @@ router.put('/edit/:id', (req, res, next) => {
 })
 
 
-router.delete('/delete/:type/:typeId/:id', (req, res, next) => {
+router.delete('/delete/:type/:typeId/:id', verifyToken, (req, res, next) => {
 
     const { id, type, typeId } = req.params
 

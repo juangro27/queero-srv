@@ -14,17 +14,12 @@ router.get('/', (req, res, next) => {
 
 })
 
-router.post('/create', (req, res, next) => {
+router.post('/create', verifyToken, (req, res, next) => {
 
-    const {
-        title,
-        postImg,
-        owner,
-        country,
-        description
-    } = req.body
-
+    const { title, postImg, country, description } = req.body
+    const { _id: owner } = req.payload
     const post = { title, postImg, owner, country, description }
+
     Post
         .create(post)
         .then(({ _id: postId }) => {
@@ -58,16 +53,10 @@ router.get('/:id', (req, res, next) => {
 
 })
 
-router.put('/:id/edit', (req, res, next) => {
+router.put('/:id/edit', verifyToken, (req, res, next) => {
 
     const { id } = req.params
-
-    const {
-        title,
-        postImg,
-        description
-    } = req.body
-
+    const { title, postImg, description } = req.body
     const post = { title, postImg, description }
 
     Post
@@ -77,7 +66,7 @@ router.put('/:id/edit', (req, res, next) => {
 
 })
 
-router.delete('/:id/:country/delete', (req, res, next) => {
+router.delete('/:id/:country/delete', verifyToken, (req, res, next) => {
 
     const { id, country } = req.params
     const promises = [

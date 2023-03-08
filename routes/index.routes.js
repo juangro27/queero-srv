@@ -3,6 +3,9 @@ const router = require("express").Router();
 const countriesRoutes = require("./countries.routes")
 router.use("/countries", countriesRoutes)
 
+const uploadRoutes = require("./upload.routes")
+router.use("/upload", uploadRoutes)
+
 const postsRoutes = require("./posts.routes")
 router.use("/posts", postsRoutes)
 

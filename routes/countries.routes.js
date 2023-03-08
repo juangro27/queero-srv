@@ -1,6 +1,8 @@
 const router = require("express").Router()
 const Comment = require("../models/Comment.model")
 const Country = require('../models/Country.model')
+const { verifyToken } = require("../middlewares/verifyToken")
+
 
 
 router.get('/', (req, res, next) => {
@@ -41,7 +43,7 @@ router.get('/:id', (req, res, next) => {
 
 })
 
-router.put('/:id/edit', (req, res, next) => {
+router.put('/:id/edit', verifyToken, (req, res, next) => {
 
     const { id } = req.params
     const {
@@ -82,7 +84,7 @@ router.put('/:id/edit', (req, res, next) => {
 
 })
 
-router.delete('/:id/delete', (req, res, next) => {
+router.delete('/:id/delete', verifyToken, (req, res, next) => {
 
     const { id } = req.params
 

@@ -1,11 +1,11 @@
 const router = require("express").Router()
 const jwt = require('jsonwebtoken')
-
 const User = require("../models/User.model")
-
 const uploaderMiddleware = require("../middlewares/uploader.middleware")
+const { verifyToken } = require("../middlewares/verifyToken")
 
-router.get("/", (req, res, next) => {
+
+router.get("/", verifyToken, (req, res, next) => {
 
     User
         .find()
@@ -15,7 +15,7 @@ router.get("/", (req, res, next) => {
         .catch(err => next(err))
 })
 
-router.get("/:id", (req, res, next) => {
+router.get("/:id", verifyToken, (req, res, next) => {
 
     const { id } = req.params
 
@@ -25,9 +25,11 @@ router.get("/:id", (req, res, next) => {
         .catch(err => next(err))
 })
 
-router.put("/:id/edit", (req, res, next) => {
+router.put("/:id/edit", verifyToken, (req, res, next) => {
+
     const { id } = req.params
     const { name, lastName, avatar } = req.body
+
     User
         .findByIdAndUpdate(id, { name, lastName, avatar }, { new: true })
         .then(user => {
@@ -44,7 +46,7 @@ router.put("/:id/edit", (req, res, next) => {
         .catch(err => next(err))
 })
 
-router.delete("/:id/delete", (req, res, next) => {
+router.delete("/:id/delete", verifyToken, (req, res, next) => {
 
     const { id } = req.params
 
