@@ -11,15 +11,18 @@ Base URL /countries
 | DELETE  | /countries/:id/delete                    | Matching ID country deletion                     |
 
 
+
 Comments routes
 
 Base URL /comments
 
 | METHOD  | URI Path                                 | Description                                                 |
 |---------|------------------------------------------|-------------------------------------------------------------|
+| GET     | /:type/:id                               | Get all comments of one contry or post                      |
 | POST    | /comments/create/:type/:id               | Create new comment in specific country or post              |
-| PUT     | /comments/:id/edit/:typeId               | Matching ID comment edition in specific country or post     |
-| DELETE  | /comments/:id/delete/:typeId             | Matching ID comment deletion in specific country or post    |
+| PUT     | /comments/edit/:id                       | Matching ID comment edition in specific country or post     |
+| DELETE  | /comments/delete/:type/:typeId/:id       | Matching ID comment deletion in specific country or post    |
+
 
 
 Posts routes
@@ -32,7 +35,8 @@ Base URL /posts
 | GET     | /posts/:id                               | Matching ID post details                      |
 | POST    | /posts/create                            | Create a new post                             |
 | PUT     | /posts/:id/edit                          | Matching ID post edit                         |
-| DELETE  | /posts/:id/delete                        | Matching ID post deletion                     |
+| DELETE  | /posts/:id/:country/delete               | Matching ID post deletion                     |
+
 
 
 Users routes
@@ -45,6 +49,7 @@ Base URL /users
 | GET     | /users/:id                               | Matching ID user details  |
 | PUT     | /users/:id/edit                          | Matching ID user edit     |
 | DELETE  | /users/:id/delete                        | Matching ID user deletion |
+
 
 
 Auth routes
