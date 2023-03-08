@@ -9,8 +9,8 @@ router.use("/posts", postsRoutes)
 const authRoutes = require("./auth.routes")
 router.use("/auth", authRoutes)
 
-const userRoutes = require("./user.routes")
-router.use("/users", userRoutes)
+const usersRoutes = require("./users.routes")
+router.use("/users", usersRoutes)
 
 const commentsRoutes = require("./comments.routes")
 router.use("/comments", commentsRoutes)

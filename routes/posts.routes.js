@@ -25,7 +25,6 @@ router.post('/create', (req, res, next) => {
     } = req.body
 
     const post = { title, postImg, owner, country, description }
-    console.log(post)
     Post
         .create(post)
         .then(({ _id: postId }) => {
@@ -35,7 +34,7 @@ router.post('/create', (req, res, next) => {
             ]
             return Promise.all(promises)
         })
-        .then(([, post]) => res.json(post))
+        .then(([, post]) => res.json(post._id))
         .catch(err => next(err))
 
 })
@@ -78,14 +77,12 @@ router.put('/:id/edit', (req, res, next) => {
 
 })
 
-router.delete('/:id/delete', (req, res, next) => {
+router.delete('/:id/:country/delete', (req, res, next) => {
 
-    const { id } = req.params
-    const { countryId } = req.body
-
+    const { id, country } = req.params
     const promises = [
         Country
-            .findByIdAndUpdate(countryId, { $pull: { posts: id } })
+            .findByIdAndUpdate(country, { $pull: { posts: id } })
             .populate({
                 path: "comments",
                 select: '-updatedAt',
@@ -103,7 +100,7 @@ router.delete('/:id/delete', (req, res, next) => {
     ]
 
     Promise.all(promises)
-        .then(([country]) => res.json(country))
+        .then(([country]) => res.json(country._id))
         .catch(err => next(err))
 
 })

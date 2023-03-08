@@ -4,10 +4,9 @@ const Country = require('../models/Country.model')
 const Post = require('../models/Post.model')
 
 
-router.get('/:id', (req, res, next) => {
+router.get('/:type/:id', (req, res, next) => {
 
-    const { id } = req.params
-    const { type } = req.query
+    const { type, id } = req.params
     const getPageComments = model => {
         return model.findById(id)
             .select({ comments: 1 })
