@@ -21,7 +21,6 @@ const postSchema = new Schema(
     description: {
       type: String,
       required: [true, 'Description is required.'],
-      lowercase: true,
       trim: true
     },
     country: {
