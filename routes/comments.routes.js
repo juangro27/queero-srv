@@ -58,7 +58,7 @@ router.put('/edit/:id', verifyToken, (req, res, next) => {
     const { comment } = req.body
 
     Comment
-        .findByIdAndUpdate(id, { comment }, { new: true })
+        .findByIdAndUpdate(id, { comment }, { runValidators: true, new: true })
         .then(response => res.json(response))
         .catch(err => next(err))
 
