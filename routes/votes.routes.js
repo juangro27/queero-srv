@@ -5,6 +5,30 @@ const Post = require('../models/Post.model')
 const { verifyToken } = require("../middlewares/verifyToken")
 
 
+router.get('/:type/:id', (req, res, next) => {
+
+    const { type, id } = req.params
+    const getPageScore = model => {
+
+        return model.findById(id)
+            .select({ votes: 1 })
+            .populate("votes", 'vote')
+            .then(({ votes }) => {
+                const votesCount = votes.reduce((acc, elm) => {
+                    const { vote } = elm
+                    if (vote === 'up') acc++
+                    return acc
+                }, 0)
+                const result = (votesCount ? ((votesCount / votes.length) * 100).toFixed(0) : 0)
+                return res.json(result)
+            })
+            .catch(err => next(err))
+    }
+
+    return type === 'COUNTRY' ? getPageScore(Country) : getPageScore(Post)
+
+})
+
 router.post('/:type/:id/create', verifyToken, (req, res, next) => {
 
     const { id, type } = req.params
