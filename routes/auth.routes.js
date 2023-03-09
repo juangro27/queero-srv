@@ -12,15 +12,15 @@ router.post('/signup', uploaderMiddleware.single('avatar'), (req, res, next) => 
     const { name, lastName, avatar, email, password } = req.body
 
     if (name.length < 2) {
-        res.status(400).json({ message: "Name must be have at least 3 characters." })
+        res.status(400).json({ errorMessages: ["Name must be have at least 3 characters."] })
         return
     }
     if (lastName.length < 2) {
-        res.status(400).json({ message: "Lastname must be have at least 3 characters." })
+        res.status(400).json({ errorMessages: ["Lastname must be have at least 3 characters."] })
         return
     }
     if (password.length < 3) {
-        res.status(400).json({ message: "Password must be have at least 4 characters." })
+        res.status(400).json({ errorMessages: ["Password must be have at least 4 characters."] })
         return
     }
 
@@ -39,7 +39,7 @@ router.post('/login', (req, res, next) => {
     const { email, password } = req.body;
 
     if (email === '' || password === '') {
-        res.status(400).json({ message: "Provide email and password." });
+        res.status(400).json({ errorMessages: ["Provide email and password."] });
         return;
     }
 
@@ -48,7 +48,7 @@ router.post('/login', (req, res, next) => {
         .then((foundUser) => {
 
             if (!foundUser) {
-                res.status(401).json({ message: "User not found." })
+                res.status(401).json({ errorMessages: ["User not found."] })
                 return;
             }
 
@@ -66,7 +66,7 @@ router.post('/login', (req, res, next) => {
                 res.status(200).json({ authToken })
             }
             else {
-                res.status(401).json({ message: "Incorrect password" });
+                res.status(401).json({ errorMessages: ["Incorrect password"] });
             }
 
         })

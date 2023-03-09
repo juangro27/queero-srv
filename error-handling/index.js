@@ -4,11 +4,11 @@ module.exports = (app) => {
   })
 
   app.use((err, req, res, next) => {
+
     console.error("ERROR", req.method, req.path, err)
 
     if (err.code && err.code === 11000) {
       const errorKey = Object.keys(err.keyValue)
-
       res.status(409).json({ errorMessages: [`${errorKey[0]} must be unique.`] })
     }
 
@@ -18,11 +18,8 @@ module.exports = (app) => {
     }
 
     if (!res.headersSent) {
-      res
-        .status(500)
-        .json({
-          message: "Internal server error. Check the server console",
-        })
+      res.status(500).json({ errorMessages: ['An error has occured on the server.'] })
     }
+
   })
 }
