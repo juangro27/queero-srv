@@ -31,7 +31,7 @@ router.put("/:id/edit", verifyToken, (req, res, next) => {
     const { name, lastName, avatar } = req.body
 
     User
-        .findByIdAndUpdate(id, { name, lastName, avatar }, { new: true })
+        .findByIdAndUpdate(id, { name, lastName, avatar }, { runValidators: true, new: true })
         .then(user => {
             const { _id, email, name, lastName, avatar } = user;
             const payload = { _id, email, name, lastName, avatar }

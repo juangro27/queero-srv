@@ -23,18 +23,12 @@ router.post('/signup', uploaderMiddleware.single('avatar'), (req, res, next) => 
         res.status(400).json({ message: "Password must be have at least 4 characters." })
         return
     }
-    User
-        .findOne({ email })
-        .then(foundUser => {
-            if (foundUser) {
-                res.status(400).json({ message: "User already exists." })
-                return
-            }
-            const salt = bcrypt.genSaltSync(saltRounds)
-            const hashedPassword = bcrypt.hashSync(password, salt)
 
-            return User.create({ email, password: hashedPassword, name, avatar, lastName })
-        })
+    const salt = bcrypt.genSaltSync(saltRounds)
+    const hashedPassword = bcrypt.hashSync(password, salt)
+
+    User.create({ email, password: hashedPassword, name, avatar, lastName })
+
         .then(() => res.sendStatus(201))
         .catch(err => next(err))
 })

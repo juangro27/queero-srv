@@ -78,7 +78,7 @@ router.put('/:id/edit', verifyToken, (req, res, next) => {
     }
 
     Country
-        .findByIdAndUpdate(id, country, { new: true })
+        .findByIdAndUpdate(id, country, { runValidators: true, new: true })
         .then(country => res.json(country))
         .catch(err => next(err))
 

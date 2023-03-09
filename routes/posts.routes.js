@@ -60,7 +60,7 @@ router.put('/:id/edit', verifyToken, (req, res, next) => {
     const post = { title, postImg, description }
 
     Post
-        .findByIdAndUpdate(id, post, { new: true })
+        .findByIdAndUpdate(id, post, { runValidators: true, new: true })
         .then(post => res.json(post))
         .catch(err => next(err))
 
