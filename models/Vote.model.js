@@ -13,6 +13,10 @@ const voteSchema = new Schema(
       type: Schema.Types.ObjectId,
       required: true,
     },
+    type: {
+      type: String,
+      enum: ['POST', 'COUNTRY']
+    }
   },
   {
     timestamps: true

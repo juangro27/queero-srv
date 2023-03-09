@@ -18,4 +18,7 @@ router.use("/users", usersRoutes)
 const commentsRoutes = require("./comments.routes")
 router.use("/comments", commentsRoutes)
 
+const votesRoutes = require("./votes.routes")
+router.use("/votes", votesRoutes)
+
 module.exports = router;

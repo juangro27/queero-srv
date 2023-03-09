@@ -33,7 +33,7 @@ router.post('/create/:type/:id', verifyToken, (req, res, next) => {
     const { comment } = req.body
 
     Comment
-        .create({ owner, comment, commentOver: type })
+        .create({ owner, comment, type })
         .then(({ _id: commentId }) => {
             const promises = [
                 Comment.findById(commentId).populate({

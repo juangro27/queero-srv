@@ -138,6 +138,10 @@ const countrySchema = new Schema(
             ref: 'post',
             type: Schema.Types.ObjectId
         }],
+        votes: [{
+            ref: 'vote',
+            type: Schema.Types.ObjectId
+        }],
     },
     {
         timestamps: true

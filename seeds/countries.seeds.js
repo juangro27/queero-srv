@@ -1,5 +1,5 @@
 const countries = require('./data')
-const ApiCountriesService = require("../services/ApiCountriesService")
+const ApiCountriesService = require("../services/apiCountriesService")
 const Country = require('../models/Country.model')
 const { parseCountries } = require('../utils/parsedCountries')
 const mongoose = require('mongoose')
