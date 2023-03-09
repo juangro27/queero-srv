@@ -1,3 +1,5 @@
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
 const { Schema, model } = require("mongoose");
 
 const userSchema = new Schema(
@@ -40,6 +42,33 @@ const userSchema = new Schema(
     timestamps: true
   }
 );
+
+userSchema.pre('save', function (next) {
+
+  const saltRounds = 10
+  const salt = bcrypt.genSaltSync(saltRounds)
+  const hashedPassword = bcrypt.hashSync(this.password, salt)
+  this.password = hashedPassword
+
+  next()
+})
+
+userSchema.methods.signToken = function () {
+  const { name, lastName, avatar, role, email } = this
+  const payload = { name, lastName, avatar, role, email }
+
+  const authToken = jwt.sign(
+    payload,
+    process.env.TOKEN_SECRET,
+    { algorithm: 'HS256', expiresIn: "6h" }
+  )
+
+  return authToken
+}
+
+userSchema.methods.validatePassword = function (candidatePassword) {
+  return bcrypt.compareSync(candidatePassword, this.password)
+}
 
 const User = model("user", userSchema);
 

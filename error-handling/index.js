@@ -9,7 +9,8 @@ module.exports = (app) => {
 
     if (err.code && err.code === 11000) {
       const errorKey = Object.keys(err.keyValue)
-      res.status(409).json({ errorMessages: [`${errorKey[0]} must be unique.`] })
+      const error = errorKey[0].charAt(0).toUpperCase() + errorKey[0].slice(1)
+      res.status(409).json({ errorMessages: [`${error} must be unique.`] })
     }
 
     if (err.name === 'ValidationError') {
