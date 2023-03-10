@@ -36,7 +36,19 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: [true, 'Password is required.']
-    }
+    },
+    favoriteCountries: [
+      {
+        ref: 'country',
+        type: Schema.Types.ObjectId
+      }
+    ],
+    favoritePosts: [
+      {
+        ref: 'post',
+        type: Schema.Types.ObjectId
+      }
+    ]
   },
   {
     timestamps: true
@@ -54,8 +66,27 @@ userSchema.pre('save', function (next) {
 })
 
 userSchema.methods.signToken = function () {
-  const { _id, name, lastName, avatar, role, email } = this
-  const payload = { _id, name, lastName, avatar, role, email }
+  const {
+    _id,
+    name,
+    lastName,
+    avatar,
+    role,
+    email,
+    favoriteCountries,
+    favoritePosts
+  } = this
+
+  const payload = {
+    _id,
+    name,
+    lastName,
+    avatar,
+    role,
+    email,
+    favoriteCountries,
+    favoritePosts
+  }
 
   const authToken = jwt.sign(
     payload,
@@ -67,7 +98,9 @@ userSchema.methods.signToken = function () {
 }
 
 userSchema.methods.validatePassword = function (candidatePassword) {
+
   return bcrypt.compareSync(candidatePassword, this.password)
+
 }
 
 const User = model("user", userSchema);
