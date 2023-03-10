@@ -43,6 +43,30 @@ router.get('/:id', (req, res, next) => {
 
 })
 
+router.get('/code/:code', (req, res, next) => {
+
+    const { code } = req.params
+
+    Country
+        .findOne({ alpha3Code: code })
+        .select({
+            name: 1,
+            discriminationProtection: 1,
+            violenceCriminalization: 1,
+            goodPlaceToLive: 1,
+            transgenderLegal: 1,
+            transMurderRates: 1,
+            illegalSameSexRelationships: 1,
+            propaganda: 1,
+            score: 1,
+            flag: 1
+        })
+        .then(country => res.json(country))
+        .catch(err => next(err))
+
+})
+
+
 router.put('/:id/edit', verifyToken, (req, res, next) => {
 
     const { id } = req.params
