@@ -13,6 +13,7 @@ router.post('/signup', uploaderMiddleware.single('avatar'), (req, res, next) => 
     User.create({ email, password, name, avatar, lastName })
         .then(() => res.sendStatus(201))
         .catch(err => next(err))
+
 })
 
 
@@ -50,7 +51,9 @@ router.post('/login', (req, res, next) => {
 })
 
 router.get('/verify', verifyToken, (req, res, next) => {
+
     res.json(req.payload)
+
 })
 
 
