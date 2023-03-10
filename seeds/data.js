@@ -2289,7 +2289,7 @@ const countries = [
     },
     {
         alpha3Code: 'TJK',
-        name: "taijikistan",
+        name: "tajikistan",
         discriminationProtection: 4,
         violenceCriminalization: 4,
         goodPlaceToLive: 4,
