@@ -33,6 +33,7 @@ Base URL /posts
 |---------|------------------------------------------|-----------------------------------------------|
 | GET     | /posts                                   | All posts list                                |
 | GET     | /posts/:id                               | Matching ID post details                      |
+| GET     | /posts/owner/:id                         | Get all posts with the same owner             |
 | POST    | /posts/create                            | Create a new post                             |
 | PUT     | /posts/:id/edit                          | Matching ID post edit                         |
 | DELETE  | /posts/:id/:country/delete               | Matching ID post deletion                     |

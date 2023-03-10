@@ -53,6 +53,20 @@ router.get('/:id', (req, res, next) => {
 
 })
 
+router.get('/owner/:id', (req, res, next) => {
+
+    const { id } = req.params
+
+    console.log('estoy en el back', id)
+
+    Post
+        .find({ owner: id })
+        .then(posts => {
+            res.json(posts)
+        })
+        .catch(err => next(err))
+})
+
 router.put('/:id/edit', verifyToken, (req, res, next) => {
 
     const { id } = req.params
