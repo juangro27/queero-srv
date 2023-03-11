@@ -35,6 +35,8 @@ router.get('/', (req, res, next) => {
     if (safetyIndex) sort.safetyIndex = Number(safetyIndex)
     if (name) sort.name = Number(name)
 
+    console.log('PAGINA', page)
+
     Country
         .find(queries)
         .sort(sort)
