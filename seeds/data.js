@@ -10,7 +10,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -137,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ALB',
@@ -23,7 +23,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 96,
-        score: "d+"
+        calification: "d+"
     },
     {
         alpha3Code: 'DZA',
@@ -36,7 +36,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -75,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'AND',
@@ -49,7 +49,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 255,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'AGO',
@@ -62,7 +62,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 183,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'ATG',
@@ -75,7 +75,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 3,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'ARG',
@@ -88,7 +88,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 260,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'ARM',
@@ -101,7 +101,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 64,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'ABW',
@@ -114,7 +114,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 138,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'AUS',
@@ -127,7 +127,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 304,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'AUT',
@@ -140,7 +140,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 305,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'AZE',
@@ -153,7 +153,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 1,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'BHR',
@@ -166,7 +166,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -15,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'BGD',
@@ -179,7 +179,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -15,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'BRB',
@@ -192,7 +192,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: -10,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'BLR',
@@ -205,7 +205,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 13,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'BEL',
@@ -218,7 +218,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 343,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'BLZ',
@@ -231,7 +231,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: -9,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'BEN',
@@ -244,7 +244,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 10,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'BTN',
@@ -257,7 +257,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 16,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'BOL',
@@ -270,7 +270,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 223,
-        score: "b-"
+        calification: "b-"
     },
     {
         alpha3Code: 'BIH',
@@ -283,7 +283,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 138,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'BWA',
@@ -296,7 +296,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 108,
-        score: "d+"
+        calification: "d+"
     },
     {
         alpha3Code: 'BRA',
@@ -309,7 +309,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 248,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'BRN',
@@ -322,7 +322,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -200,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'BGR',
@@ -335,7 +335,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 159,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'BFA',
@@ -348,7 +348,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 53,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'BDI',
@@ -361,7 +361,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -22,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'CPV',
@@ -374,7 +374,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 125,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'KHM',
@@ -387,7 +387,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 4,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'CMR',
@@ -400,7 +400,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -64,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'CAN',
@@ -413,7 +413,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 383,
-        score: "a"
+        calification: "a"
     },
     {
         alpha3Code: 'CYM',
@@ -426,7 +426,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 60,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'CAF',
@@ -439,7 +439,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -19,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'TCD',
@@ -452,7 +452,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -38,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'CHL',
@@ -465,7 +465,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 307,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'CHN',
@@ -478,7 +478,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: 31,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'COL',
@@ -491,7 +491,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 239,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'COM',
@@ -504,7 +504,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -56,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'COG',
@@ -517,7 +517,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 16,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'CRI',
@@ -530,7 +530,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 259,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'CIV',
@@ -543,7 +543,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: -25,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'HRV',
@@ -556,7 +556,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 288,
-        score: "b+"
+        calification: "b+"
     },
     {
         alpha3Code: 'CUB',
@@ -569,7 +569,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 279,
-        score: "b+"
+        calification: "b+"
     },
     {
         alpha3Code: 'CUW',
@@ -582,7 +582,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 85,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'CYP',
@@ -595,7 +595,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 192,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'CZE',
@@ -608,7 +608,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 185,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'COD',
@@ -621,7 +621,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: -27,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'DNK',
@@ -634,7 +634,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 347,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'DJI',
@@ -647,7 +647,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 5,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'DMA',
@@ -660,7 +660,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -47,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'DOM',
@@ -673,7 +673,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 3,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'ECU',
@@ -686,7 +686,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 223,
-        score: "b-"
+        calification: "b-"
     },
     {
         alpha3Code: 'EGY',
@@ -699,7 +699,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -95,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'SLV',
@@ -712,7 +712,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 58,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'GNQ',
@@ -725,7 +725,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: 40,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'ERI',
@@ -738,7 +738,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -75,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'EST',
@@ -751,7 +751,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 223,
-        score: "b-"
+        calification: "b-"
     },
     {
         alpha3Code: 'SWZ',
@@ -764,7 +764,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -26,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ETH',
@@ -777,7 +777,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -83,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'FJI',
@@ -790,7 +790,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 123,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'FIN',
@@ -803,7 +803,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 300,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'FRA',
@@ -816,7 +816,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 338,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'GAB',
@@ -829,7 +829,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 10,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'GMB',
@@ -842,7 +842,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -139,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'GEO',
@@ -855,7 +855,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 154,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'DEU',
@@ -868,7 +868,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 309,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'GHA',
@@ -881,7 +881,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -59,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'GRC',
@@ -894,7 +894,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 239,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'GRD',
@@ -907,7 +907,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 43,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'GUM',
@@ -920,7 +920,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 299,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'GTM',
@@ -933,7 +933,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 3,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'GIN',
@@ -946,7 +946,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -60,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'GNB',
@@ -959,7 +959,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 0,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'GUY',
@@ -972,7 +972,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -162,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'HTI',
@@ -985,7 +985,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 78,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'HND',
@@ -998,7 +998,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 65,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'HKG',
@@ -1011,7 +1011,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 74,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'HUN',
@@ -1024,7 +1024,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: 136,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'ISL',
@@ -1037,7 +1037,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 330,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'IND',
@@ -1050,7 +1050,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 177,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'IDN',
@@ -1063,7 +1063,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -7,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'IRN',
@@ -1076,7 +1076,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -105,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'IRQ',
@@ -1089,7 +1089,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -28,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'IRL',
@@ -1102,7 +1102,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 320,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'ISR',
@@ -1115,7 +1115,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 215,
-        score: "b-"
+        calification: "b-"
     },
     {
         alpha3Code: 'ITA',
@@ -1128,7 +1128,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 169,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'JAM',
@@ -1141,7 +1141,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -61,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'JPN',
@@ -1154,7 +1154,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 96,
-        score: "d+"
+        calification: "d+"
     },
     {
         alpha3Code: 'JOR',
@@ -1167,7 +1167,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -15,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'KAZ',
@@ -1180,7 +1180,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: 2,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'KEN',
@@ -1193,7 +1193,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -62,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'KIR',
@@ -1206,7 +1206,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -70,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'BRB',
@@ -1219,7 +1219,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 196,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'KWT',
@@ -1232,7 +1232,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -180,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'KGZ',
@@ -1245,7 +1245,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 32,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'LAO',
@@ -1258,7 +1258,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 71,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'LVA',
@@ -1271,7 +1271,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 95,
-        score: "d+"
+        calification: "d+"
     },
     {
         alpha3Code: 'LBN',
@@ -1284,7 +1284,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -58,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'LSO',
@@ -1297,7 +1297,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 80,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'LBR',
@@ -1310,7 +1310,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -49,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'LBY',
@@ -1323,7 +1323,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -150,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'LIE',
@@ -1336,7 +1336,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 142,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'LTU',
@@ -1349,7 +1349,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: 150,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'LUX',
@@ -1362,7 +1362,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 320,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'MAC',
@@ -1375,7 +1375,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 65,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'MDG',
@@ -1388,7 +1388,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 26,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'MWI',
@@ -1401,7 +1401,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -163,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'MYS',
@@ -1414,7 +1414,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -160,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'MDV',
@@ -1427,7 +1427,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -80,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'MLI',
@@ -1440,7 +1440,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 12,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'MLT',
@@ -1453,7 +1453,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 370,
-        score: "a"
+        calification: "a"
     },
     {
         alpha3Code: 'MHL',
@@ -1466,7 +1466,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 85,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'MRT',
@@ -1479,7 +1479,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -141,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'MUS',
@@ -1492,7 +1492,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: 15,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'MEX',
@@ -1505,7 +1505,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 212,
-        score: "b-"
+        calification: "b-"
     },
     {
         alpha3Code: 'FSM',
@@ -1518,7 +1518,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 50,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'MDA',
@@ -1531,7 +1531,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 95,
-        score: "d+"
+        calification: "d+"
     },
     {
         alpha3Code: 'MCO',
@@ -1544,7 +1544,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 62,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'MNG',
@@ -1557,7 +1557,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 117,
-        score: "d+"
+        calification: "d+"
     },
     {
         alpha3Code: 'MNE',
@@ -1570,7 +1570,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 167,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'MAR',
@@ -1583,7 +1583,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -89,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'MOZ',
@@ -1596,7 +1596,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 62,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'MMR',
@@ -1609,7 +1609,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -73,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'NAM',
@@ -1622,7 +1622,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: 58,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'NRU',
@@ -1635,7 +1635,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 0,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'NPL',
@@ -1648,7 +1648,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 206,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'NLD',
@@ -1661,7 +1661,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 373,
-        score: "a"
+        calification: "a"
     },
     {
         alpha3Code: 'NZL',
@@ -1674,7 +1674,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 299,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'NIC',
@@ -1687,7 +1687,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 156,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'NER',
@@ -1700,7 +1700,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 14,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'NGA',
@@ -1713,7 +1713,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -190,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'MKD',
@@ -1726,7 +1726,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 163,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'MNP',
@@ -1739,7 +1739,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 85,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'NOR',
@@ -1752,7 +1752,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 358,
-        score: "a"
+        calification: "a"
     },
     {
         alpha3Code: 'OMN',
@@ -1765,7 +1765,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -145,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'PAK',
@@ -1778,7 +1778,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -47,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'PLW',
@@ -1791,7 +1791,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 0,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'PAN',
@@ -1804,7 +1804,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 51,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'PNG',
@@ -1817,7 +1817,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -81,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'PRY',
@@ -1830,7 +1830,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 30,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'PER',
@@ -1843,7 +1843,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 206,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'PHL',
@@ -1856,7 +1856,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 62,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'POL',
@@ -1869,7 +1869,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 82,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'PRT',
@@ -1882,7 +1882,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 358,
-        score: "a"
+        calification: "a"
     },
     {
         alpha3Code: 'PRI',
@@ -1895,7 +1895,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 245,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'QAT',
@@ -1908,7 +1908,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -137,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ROU',
@@ -1921,7 +1921,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 137,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'RUS',
@@ -1934,7 +1934,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -37,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'RWA',
@@ -1947,7 +1947,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: -29,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ASM',
@@ -1960,7 +1960,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: 48,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'SMR',
@@ -1973,7 +1973,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 238,
-        score: "b"
+        calification: "b"
     },
     {
         alpha3Code: 'STP',
@@ -1986,7 +1986,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 0,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'SAU',
@@ -1999,7 +1999,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -196,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'SEN',
@@ -2012,7 +2012,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -67,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'SRB',
@@ -2025,7 +2025,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 172,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'SYC',
@@ -2038,7 +2038,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 75,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'SLE',
@@ -2051,7 +2051,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -73,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'SGP',
@@ -2064,7 +2064,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 78,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'SXM',
@@ -2077,7 +2077,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 85,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'SVK',
@@ -2090,7 +2090,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 191,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'SVN',
@@ -2103,7 +2103,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 281,
-        score: "b+"
+        calification: "b+"
     },
     {
         alpha3Code: 'SLB',
@@ -2116,7 +2116,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -85,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'SOM',
@@ -2129,7 +2129,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -140,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ZAF',
@@ -2142,7 +2142,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 317,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'KOR',
@@ -2155,7 +2155,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 92,
-        score: "d+"
+        calification: "d+"
     },
     {
         alpha3Code: 'SSD',
@@ -2168,7 +2168,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -116,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ESP',
@@ -2181,7 +2181,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 356,
-        score: "a"
+        calification: "a"
     },
     {
         alpha3Code: 'LKA',
@@ -2194,7 +2194,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -46,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'KNA',
@@ -2207,7 +2207,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 43,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'LCA',
@@ -2220,7 +2220,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -90,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'VCT',
@@ -2233,7 +2233,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -70,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'SDN',
@@ -2246,7 +2246,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -159,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'SUR',
@@ -2259,7 +2259,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 136,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'SWE',
@@ -2272,7 +2272,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 377,
-        score: "a"
+        calification: "a"
     },
     {
         alpha3Code: 'CHE',
@@ -2285,7 +2285,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 328,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'TJK',
@@ -2298,7 +2298,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 24,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'TWN',
@@ -2311,7 +2311,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 188,
-        score: "c+"
+        calification: "c+"
     },
     {
         alpha3Code: 'TZA',
@@ -2324,7 +2324,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -120,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'THA',
@@ -2337,7 +2337,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 141,
-        score: "c-"
+        calification: "c-"
     },
     {
         alpha3Code: 'BHS',
@@ -2350,7 +2350,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 50,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'TLS',
@@ -2363,7 +2363,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 20,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'TGO',
@@ -2376,7 +2376,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -55,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'TON',
@@ -2389,7 +2389,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -130,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'TTO',
@@ -2402,7 +2402,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 21,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'TUN',
@@ -2415,7 +2415,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -91,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'TCA',
@@ -2428,7 +2428,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 50,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'TUR',
@@ -2441,7 +2441,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 40,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'TKM',
@@ -2454,7 +2454,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -60,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'TUV',
@@ -2467,7 +2467,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -75,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ARE',
@@ -2480,7 +2480,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -160,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'UGA',
@@ -2493,7 +2493,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -83,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'UKR',
@@ -2506,7 +2506,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 165,
-        score: "c"
+        calification: "c"
     },
     {
         alpha3Code: 'GBR',
@@ -2519,7 +2519,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 342,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'USA',
@@ -2532,7 +2532,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: 292,
-        score: "b+"
+        calification: "b+"
     },
     {
         alpha3Code: 'URY',
@@ -2545,7 +2545,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 305,
-        score: "a-"
+        calification: "a-"
     },
     {
         alpha3Code: 'UZB',
@@ -2558,7 +2558,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -65,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'VEN',
@@ -2571,7 +2571,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 28,
-        score: "d-"
+        calification: "d-"
     },
     {
         alpha3Code: 'VNM',
@@ -2584,7 +2584,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 65,
-        score: "d"
+        calification: "d"
     },
     {
         alpha3Code: 'VIR',
@@ -2597,7 +2597,7 @@ const countries = [
         illegalSameSexRelationships: 'Allowed',
         propaganda: 'Allowed',
         safetyIndex: 289,
-        score: "b+"
+        calification: "b+"
     },
     {
         alpha3Code: 'YEM',
@@ -2610,7 +2610,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
         safetyIndex: -145,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ZMB',
@@ -2623,7 +2623,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -79,
-        score: "f"
+        calification: "f"
     },
     {
         alpha3Code: 'ZWE',
@@ -2636,7 +2636,7 @@ const countries = [
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
         propaganda: 'Allowed',
         safetyIndex: -52,
-        score: "f"
+        calification: "f"
     }
 ]
 

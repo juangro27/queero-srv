@@ -18,6 +18,10 @@ const postSchema = new Schema(
       type: Schema.Types.ObjectId,
       required: true,
     },
+    score: {
+      type: Number,
+      default: 0,
+    },
     description: {
       type: String,
       required: [true, 'Description is required.'],
