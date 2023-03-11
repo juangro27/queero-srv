@@ -17,7 +17,8 @@ router.get('/', (req, res, next) => {
         score,
         transMurderRates,
         safetyIndex,
-        alphabetic: name
+        alphabetic: name,
+        page
     } = req.query
 
     let sort = {}
@@ -37,6 +38,8 @@ router.get('/', (req, res, next) => {
     Country
         .find(queries)
         .sort(sort)
+        .skip(page * 20 - 20)
+        .limit(20)
         .then(countries => res.json(countries))
         .catch(err => next(err))
 
@@ -45,9 +48,13 @@ router.get('/', (req, res, next) => {
 
 router.get('/names', (req, res, next) => {
 
+    const { page } = req.query
+
     Country
         .find()
         .select({ name: 1 })
+        .skip(page * 20 - 20)
+        .limit(20)
         .then(data => res.json(data))
         .catch(err => next(err))
 })
