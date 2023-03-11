@@ -8,6 +8,7 @@ const { verifyToken } = require("../middlewares/verifyToken")
 router.get('/:type/:id', (req, res, next) => {
 
     const { type, id } = req.params
+
     const getPageScore = model => {
 
         return model.findById(id)

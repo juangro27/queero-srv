@@ -65,8 +65,12 @@ const countrySchema = new Schema(
             trim: true
         },
         score: {
+            type: Number,
+            default: 0,
+        },
+        calification: {
             type: String,
-            required: [true, 'Score is required.'],
+            required: [true, 'Calification is required.'],
             trim: true
         },
         currencies: [

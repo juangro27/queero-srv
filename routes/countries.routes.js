@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
         transgenderLegal,
         illegalSameSexRelationships,
         propaganda,
-        score,
+        calification,
         transMurderRates,
         safetyIndex,
         alphabetic: name
@@ -29,7 +29,7 @@ router.get('/', (req, res, next) => {
     if (transgenderLegal) queries.transgenderLegal = transgenderLegal
     if (illegalSameSexRelationships) queries.illegalSameSexRelationships = illegalSameSexRelationships
     if (propaganda) queries.propaganda = propaganda
-    if (score) queries.score = score
+    if (calification) queries.calification = calification
     if (transMurderRates) sort.transMurderRates = Number(transMurderRates)
     if (safetyIndex) sort.safetyIndex = Number(safetyIndex)
     if (name) sort.name = Number(name)
@@ -87,8 +87,9 @@ router.get('/code/:code', (req, res, next) => {
             transMurderRates: 1,
             illegalSameSexRelationships: 1,
             propaganda: 1,
-            score: 1,
-            flag: 1
+            calification: 1,
+            flag: 1,
+            score: 1
         })
         .then(country => res.json(country))
         .catch(err => next(err))
@@ -112,7 +113,7 @@ router.put('/:id/edit', verifyToken, (req, res, next) => {
         illegalSameSexRelationships,
         propaganda,
         safetyIndex,
-        score,
+        calification,
     } = req.body
     const country = {
         name,
@@ -127,7 +128,7 @@ router.put('/:id/edit', verifyToken, (req, res, next) => {
         illegalSameSexRelationships,
         propaganda,
         safetyIndex,
-        score,
+        calification,
     }
 
     Country
