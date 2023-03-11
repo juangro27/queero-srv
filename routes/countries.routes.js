@@ -7,12 +7,41 @@ const { verifyToken } = require("../middlewares/verifyToken")
 
 router.get('/', (req, res, next) => {
 
+    const {
+        discriminationProtection,
+        violenceCriminalization,
+        goodPlaceToLive,
+        transgenderLegal,
+        illegalSameSexRelationships,
+        propaganda,
+        score,
+        transMurderRates,
+        safetyIndex,
+        alphabetic: name
+    } = req.query
+
+    let sort = {}
+    let queries = {}
+
+    if (discriminationProtection) { queries.discriminationProtection = discriminationProtection }
+    if (violenceCriminalization) { queries.violenceCriminalization = violenceCriminalization }
+    if (goodPlaceToLive) queries.goodPlaceToLive = goodPlaceToLive
+    if (transgenderLegal) queries.transgenderLegal = transgenderLegal
+    if (illegalSameSexRelationships) queries.illegalSameSexRelationships = illegalSameSexRelationships
+    if (propaganda) queries.propaganda = propaganda
+    if (score) queries.score = score
+    if (transMurderRates) sort.transMurderRates = Number(transMurderRates)
+    if (safetyIndex) sort.safetyIndex = Number(safetyIndex)
+    if (name) sort.name = Number(name)
+
     Country
-        .find()
+        .find(queries)
+        .sort(sort)
         .then(countries => res.json(countries))
         .catch(err => next(err))
 
 })
+
 
 router.get('/names', (req, res, next) => {
 

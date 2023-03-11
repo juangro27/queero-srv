@@ -50,12 +50,12 @@ const countrySchema = new Schema(
             trim: true
         },
         illegalSameSexRelationships: {
-            type: Boolean,
+            type: String,
             required: [true, 'Ilegal same sex relationships is required.'],
             trim: true
         },
         propaganda: {
-            type: Boolean,
+            type: String,
             required: [true, 'Propaganda is required.'],
             trim: true
         },

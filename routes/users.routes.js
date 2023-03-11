@@ -23,6 +23,8 @@ router.get("/:id", verifyToken, (req, res, next) => {
 
     User
         .findById(id)
+        .populate('favoriteCountries', 'name')
+        .populate('favoritePosts', 'title')
         .then(user => res.json(user))
         .catch(err => next(err))
 
