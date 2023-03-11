@@ -1,5 +1,5 @@
-const getPageScore = model => {
-
+const refreshScore = (model, id) => {
+    let score = 0
     return model.findById(id)
         .select({ votes: 1 })
         .populate("votes", 'vote')
@@ -10,9 +10,10 @@ const getPageScore = model => {
                 return acc
             }, 0)
             const result = (votesCount ? ((votesCount / votes.length) * 100).toFixed(0) : 0)
-            return res.json(result)
+            score = result
+            return model.findByIdAndUpdate(id, { score }, { new: true })
         })
         .catch(err => next(err))
 }
 
-module.exports = { getPageScore }
+module.exports = { refreshScore }

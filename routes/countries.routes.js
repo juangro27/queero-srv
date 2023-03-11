@@ -18,7 +18,8 @@ router.get('/', (req, res, next) => {
         transMurderRates,
         safetyIndex,
         alphabetic: name,
-        page
+        page,
+        score
     } = req.query
 
     let sort = {}
@@ -34,6 +35,8 @@ router.get('/', (req, res, next) => {
     if (transMurderRates) sort.transMurderRates = Number(transMurderRates)
     if (safetyIndex) sort.safetyIndex = Number(safetyIndex)
     if (name) sort.name = Number(name)
+    if (score) sort.score = Number(score)
+    // if (page) sort.page = Number(page)
 
     Country
         .find(queries)

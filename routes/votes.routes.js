@@ -3,6 +3,7 @@ const Vote = require("../models/Vote.model")
 const Country = require('../models/Country.model')
 const Post = require('../models/Post.model')
 const { verifyToken } = require("../middlewares/verifyToken")
+const { refreshScore } = require("../utils/getScore")
 
 
 router.get('/:type/:id', (req, res, next) => {
@@ -12,16 +13,9 @@ router.get('/:type/:id', (req, res, next) => {
     const getPageScore = model => {
 
         return model.findById(id)
-            .select({ votes: 1 })
-            .populate("votes", 'vote')
-            .then(({ votes }) => {
-                const votesCount = votes.reduce((acc, elm) => {
-                    const { vote } = elm
-                    if (vote === 'up') acc++
-                    return acc
-                }, 0)
-                const result = (votesCount ? ((votesCount / votes.length) * 100).toFixed(0) : 0)
-                return res.json(result)
+            .select({ score: 1 })
+            .then(({ score }) => {
+                return res.json(score)
             })
             .catch(err => next(err))
     }
@@ -56,6 +50,7 @@ router.post('/:type/:id/create', verifyToken, (req, res, next) => {
                     { unique: true }
                 );
             })
+            .then(() => refreshScore(type, id))
             .then(result => res.json(result))
             .catch(err => next(err))
     }
