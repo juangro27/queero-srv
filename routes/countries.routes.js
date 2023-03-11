@@ -36,16 +36,29 @@ router.get('/', (req, res, next) => {
     if (safetyIndex) sort.safetyIndex = Number(safetyIndex)
     if (name) sort.name = Number(name)
     if (score) sort.score = Number(score)
-    // if (page) sort.page = Number(page)
 
-    console.log('PAGINA', page)
+    const perPage = 20;
+    const actualPage = parseInt(page) || 1
+    const skip = (actualPage - 1) * perPage
+    let totalPages
 
     Country
-        .find(queries)
-        .sort(sort)
-        .skip(page * 20 - 20)
-        .limit(20)
-        .then(countries => res.json(countries))
+        .countDocuments(queries)
+        .then(count => {
+            totalPages = Math.ceil(count / perPage)
+
+
+            return Country
+                .find(queries)
+                .sort(sort)
+                .skip(skip)
+                .limit(perPage)
+        })
+        .then(countries => res.json({
+            countries,
+            totalPages,
+            currentPage: actualPage
+        }))
         .catch(err => next(err))
 
 })
