@@ -38,6 +38,8 @@ router.get('/', (req, res, next) => {
     if (score) sort.score = Number(score)
     // if (page) sort.page = Number(page)
 
+    console.log('PAGINA', page)
+
     Country
         .find(queries)
         .sort(sort)
