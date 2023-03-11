@@ -7,8 +7,28 @@ const router = require("express").Router()
 
 router.get('/', (req, res, next) => {
 
+
     Post
         .find()
+        .then(posts => res.json(posts))
+        .catch(err => next(err))
+
+})
+
+router.get('/country/:country/', (req, res, next) => {
+
+    const { country } = req.params
+    const { alphabetic: title, score } = req.query
+
+    let sort = {}
+
+
+    if (title) sort.title = Number(title)
+    if (score) sort.score = Number(score)
+    console.log(sort)
+    Post
+        .find({ country })
+        .sort(sort)
         .then(posts => res.json(posts))
         .catch(err => next(err))
 
