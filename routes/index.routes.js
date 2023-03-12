@@ -21,4 +21,7 @@ router.use("/comments", commentsRoutes)
 const votesRoutes = require("./votes.routes")
 router.use("/votes", votesRoutes)
 
+const chatRoutes = require("./chat.routes")
+router.use("/chat", chatRoutes)
+
 module.exports = router;

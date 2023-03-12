@@ -77,8 +77,6 @@ router.get('/owner/:id', (req, res, next) => {
 
     const { id } = req.params
 
-    console.log('estoy en el back', id)
-
     Post
         .find({ owner: id })
         .then(posts => {

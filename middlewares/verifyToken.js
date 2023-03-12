@@ -1,4 +1,4 @@
-var { expressjwt } = require("express-jwt");
+const { expressjwt } = require("express-jwt");
 
 const verifyToken = expressjwt({
     secret: process.env.TOKEN_SECRET,
