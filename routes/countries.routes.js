@@ -47,7 +47,6 @@ router.get('/', (req, res, next) => {
         .then(count => {
             totalPages = Math.ceil(count / perPage)
 
-
             return Country
                 .find(queries)
                 .sort(sort)

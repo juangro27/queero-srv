@@ -18,18 +18,33 @@ router.get('/', (req, res, next) => {
 router.get('/country/:country/', (req, res, next) => {
 
     const { country } = req.params
-    const { alphabetic: title, score } = req.query
+    const { alphabetic: title, score, page } = req.query
 
     let sort = {}
-
+    const perPage = 5;
+    const actualPage = parseInt(page) || 1
+    const skip = (actualPage - 1) * perPage
+    let totalPages
 
     if (title) sort.title = Number(title)
     if (score) sort.score = Number(score)
-    console.log(sort)
+
     Post
-        .find({ country })
-        .sort(sort)
-        .then(posts => res.json(posts))
+        .countDocuments({ country })
+        .then(count => {
+            totalPages = Math.ceil(count / perPage)
+
+            return Post
+                .find({ country })
+                .sort(sort)
+                .skip(skip)
+                .limit(perPage)
+        })
+        .then(posts => res.json({
+            posts,
+            totalPages,
+            currentPage: actualPage
+        }))
         .catch(err => next(err))
 
 })
