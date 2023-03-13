@@ -34,7 +34,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -75,
         calification: "f"
     },
@@ -164,7 +164,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -15,
         calification: "f"
     },
@@ -320,7 +320,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -200,
         calification: "f"
     },
@@ -476,7 +476,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: 31,
         calification: "d-"
     },
@@ -697,7 +697,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -95,
         calification: "f"
     },
@@ -1022,7 +1022,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0.1,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: 136,
         calification: "c-"
     },
@@ -1061,7 +1061,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -7,
         calification: "f"
     },
@@ -1074,7 +1074,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -105,
         calification: "f"
     },
@@ -1087,7 +1087,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0.1,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -28,
         calification: "f"
     },
@@ -1139,7 +1139,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0.7,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -61,
         calification: "f"
     },
@@ -1165,7 +1165,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -15,
         calification: "f"
     },
@@ -1178,7 +1178,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0.1,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: 2,
         calification: "d-"
     },
@@ -1191,7 +1191,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -62,
         calification: "f"
     },
@@ -1230,7 +1230,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -180,
         calification: "f"
     },
@@ -1282,7 +1282,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender but it requires sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -58,
         calification: "f"
     },
@@ -1321,7 +1321,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -150,
         calification: "f"
     },
@@ -1347,7 +1347,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender without sex reassignment surgery',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: 150,
         calification: "c"
     },
@@ -1399,7 +1399,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0.1,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -163,
         calification: "f"
     },
@@ -1412,7 +1412,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0.5,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -160,
         calification: "f"
     },
@@ -1477,7 +1477,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -141,
         calification: "f"
     },
@@ -1581,7 +1581,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -89,
         calification: "f"
     },
@@ -1711,7 +1711,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -190,
         calification: "f"
     },
@@ -1763,7 +1763,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -145,
         calification: "f"
     },
@@ -1776,7 +1776,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender without sex reassignment surgery',
         transMurderRates: 0.5,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -47,
         calification: "f"
     },
@@ -1906,7 +1906,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -137,
         calification: "f"
     },
@@ -1932,7 +1932,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender without sex reassignment surgery',
         transMurderRates: 0.1,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -37,
         calification: "f"
     },
@@ -1997,7 +1997,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0.1,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -196,
         calification: "f"
     },
@@ -2218,7 +2218,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -90,
         calification: "f"
     },
@@ -2244,7 +2244,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -159,
         calification: "f"
     },
@@ -2322,7 +2322,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -120,
         calification: "f"
     },
@@ -2413,7 +2413,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -91,
         calification: "f"
     },
@@ -2478,7 +2478,7 @@ const countries = [
         transgenderLegal: 'Illegal',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -160,
         calification: "f"
     },
@@ -2491,7 +2491,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0.1,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -83,
         calification: "f"
     },
@@ -2530,7 +2530,7 @@ const countries = [
         transgenderLegal: 'Legal to change gender without sex reassignment surgery',
         transMurderRates: 1.1,
         illegalSameSexRelationships: 'Allowed',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: 292,
         calification: "b+"
     },
@@ -2608,7 +2608,7 @@ const countries = [
         transgenderLegal: 'No information',
         transMurderRates: 0,
         illegalSameSexRelationships: 'Punishments range from jail time to the death penalty',
-        propaganda: 'Laws prevent the discussion of Pro-LGTBTQ+ issues',
+        propaganda: 'Laws prevent the discussion of Pro-LGTBQ+ issues',
         safetyIndex: -145,
         calification: "f"
     },

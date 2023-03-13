@@ -5,7 +5,7 @@ const { verifyToken } = require("../middlewares/verifyToken")
 
 
 
-router.get('/', (req, res, next) => {
+router.post('/', (req, res, next) => {
 
     const {
         discriminationProtection,
@@ -15,14 +15,11 @@ router.get('/', (req, res, next) => {
         illegalSameSexRelationships,
         propaganda,
         calification,
-        transMurderRates,
-        safetyIndex,
-        alphabetic: name,
         page,
-        score
     } = req.query
 
-    let sort = {}
+    const { sort } = req.body
+
     let queries = {}
 
     if (discriminationProtection) { queries.discriminationProtection = discriminationProtection }
@@ -32,10 +29,6 @@ router.get('/', (req, res, next) => {
     if (illegalSameSexRelationships) queries.illegalSameSexRelationships = illegalSameSexRelationships
     if (propaganda) queries.propaganda = propaganda
     if (calification) queries.calification = calification
-    if (transMurderRates) sort.transMurderRates = Number(transMurderRates)
-    if (safetyIndex) sort.safetyIndex = Number(safetyIndex)
-    if (name) sort.name = Number(name)
-    if (score) sort.score = Number(score)
 
     const perPage = 20;
     const actualPage = parseInt(page) || 1

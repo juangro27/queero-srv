@@ -25,7 +25,7 @@ router.get('/country/:country/', (req, res, next) => {
 
     if (title) sort.title = Number(title)
     if (score) sort.score = Number(score)
-    console.log(sort)
+
     Post
         .find({ country })
         .sort(sort)
