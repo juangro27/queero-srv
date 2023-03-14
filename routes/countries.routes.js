@@ -40,7 +40,6 @@ router.post('/', (req, res, next) => {
         .then(count => {
             totalPages = Math.ceil(count / perPage)
 
-
             return Country
                 .find(queries)
                 .sort(sort)
@@ -84,7 +83,14 @@ router.get('/:id', (req, res, next) => {
                 select: '-__v -password -email -role -createdAt -updatedAt'
             },
         })
-        .populate('posts', 'title owner')
+        .populate({
+            path: 'posts',
+            select: 'title owner',
+            populate: {
+                path: 'owner',
+                select: 'name lastName avatar'
+            }
+        })
         .then(country => res.json(country))
         .catch(err => next(err))
 

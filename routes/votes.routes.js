@@ -7,7 +7,6 @@ const { getScore } = require("../utils/getScore")
 
 
 router.get('/:type/:id', (req, res, next) => {
-
     const { type, id } = req.params
 
     const getPageScore = model => {
