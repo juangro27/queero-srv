@@ -10,14 +10,17 @@ router.get('/', (req, res, next) => {
 
     Post
         .find()
+        .populate('country', 'name flag')
+        .populate('owner', 'name lastName avatar')
         .then(posts => res.json(posts))
         .catch(err => next(err))
 
 })
 
-router.get('/country/:country/', (req, res, next) => {
+router.post('/country/:country/', (req, res, next) => {
 
     const { country } = req.params
+<<<<<<< HEAD
     const { alphabetic: title, score, page } = req.query
 
     let sort = {}
@@ -45,6 +48,16 @@ router.get('/country/:country/', (req, res, next) => {
             totalPages,
             currentPage: actualPage
         }))
+=======
+    const { sort } = req.body
+
+    Post
+        .find({ country })
+        .populate('owner', 'avatar name lastName')
+        .populate('country', 'flag name')
+        .sort(sort)
+        .then(posts => res.json(posts))
+>>>>>>> juan
         .catch(err => next(err))
 
 })
@@ -72,7 +85,6 @@ router.post('/create', verifyToken, (req, res, next) => {
 router.get('/:id', (req, res, next) => {
 
     const { id } = req.params
-
     Post
         .findById(id)
         .populate({
