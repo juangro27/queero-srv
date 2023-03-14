@@ -20,35 +20,6 @@ router.get('/', (req, res, next) => {
 router.post('/country/:country/', (req, res, next) => {
 
     const { country } = req.params
-<<<<<<< HEAD
-    const { alphabetic: title, score, page } = req.query
-
-    let sort = {}
-    const perPage = 5;
-    const actualPage = parseInt(page) || 1
-    const skip = (actualPage - 1) * perPage
-    let totalPages
-
-    if (title) sort.title = Number(title)
-    if (score) sort.score = Number(score)
-
-    Post
-        .countDocuments({ country })
-        .then(count => {
-            totalPages = Math.ceil(count / perPage)
-
-            return Post
-                .find({ country })
-                .sort(sort)
-                .skip(skip)
-                .limit(perPage)
-        })
-        .then(posts => res.json({
-            posts,
-            totalPages,
-            currentPage: actualPage
-        }))
-=======
     const { sort } = req.body
 
     Post
@@ -57,7 +28,6 @@ router.post('/country/:country/', (req, res, next) => {
         .populate('country', 'flag name')
         .sort(sort)
         .then(posts => res.json(posts))
->>>>>>> juan
         .catch(err => next(err))
 
 })
