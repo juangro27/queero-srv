@@ -69,6 +69,16 @@ router.get('/names', (req, res, next) => {
         .catch(err => next(err))
 })
 
+router.get('/nameslist', (req, res, next) => {
+
+
+    Country
+        .find()
+        .select({ name: 1 })
+        .then(data => res.json(data))
+        .catch(err => next(err))
+})
+
 router.get('/:id', (req, res, next) => {
 
     const { id } = req.params
@@ -85,11 +95,20 @@ router.get('/:id', (req, res, next) => {
         })
         .populate({
             path: 'posts',
-            select: 'title owner',
+            select: 'title owner country',
             populate: {
                 path: 'owner',
                 select: 'name lastName avatar'
-            }
+            },
+
+        })
+        .populate({
+            path: 'posts',
+            populate: {
+                path: 'country',
+                select: 'name flag'
+            },
+
         })
         .then(country => res.json(country))
         .catch(err => next(err))
