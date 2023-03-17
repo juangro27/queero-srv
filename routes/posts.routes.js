@@ -76,6 +76,7 @@ router.get('/owner/:id', (req, res, next) => {
 
     Post
         .find({ owner: id })
+        .populate('country', 'flag')
         .then(posts => {
             res.json(posts)
         })

@@ -11,7 +11,7 @@ const postSchema = new Schema(
     postImg: {
       type: String,
       trim: true,
-      default: 'https://res.cloudinary.com/dulqf7f1b/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1676741904/avatars/avatar-default.jpg'
+      default: ''
     },
     owner: {
       ref: 'user',

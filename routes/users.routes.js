@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken')
 const User = require("../models/User.model")
 const uploaderMiddleware = require("../middlewares/uploader.middleware")
 const { verifyToken } = require("../middlewares/verifyToken")
-const { findByIdAndUpdate } = require("../models/User.model")
 
 
 router.get("/", verifyToken, (req, res, next) => {
@@ -17,14 +16,21 @@ router.get("/", verifyToken, (req, res, next) => {
 
 })
 
-router.get("/:id", verifyToken, (req, res, next) => {
+router.get("/:id", (req, res, next) => {
 
     const { id } = req.params
 
     User
         .findById(id)
-        .populate('favoriteCountries', 'name')
-        .populate('favoritePosts', 'title')
+        .populate('favoriteCountries', 'name flag')
+        .populate({
+            path: 'favoritePosts',
+            select: 'title country',
+            populate: {
+                path: 'country',
+                select: 'flag'
+            }
+        })
         .then(user => res.json(user))
         .catch(err => next(err))
 
